@@ -1,3 +1,3 @@
 Router.route('/', {
-  name: 'timeline'
+  name: 'timeline',
 });
