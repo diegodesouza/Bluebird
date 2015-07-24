@@ -8,3 +8,9 @@ Template.header.onRendered(function(){
     edge: 'right'
   });
 });
+
+Template.header.events({
+  'click [data-action="logout"]': function () {
+    AccountsTemplates.logout();
+  }
+});

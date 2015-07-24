@@ -10,6 +10,10 @@ Posts.attachSchema(new SimpleSchema({
   createdAt: {
     type: String,
     optional: true
+  },
+  createdBy: {
+    type: String,
+    optional: true
   }
 }));
 
