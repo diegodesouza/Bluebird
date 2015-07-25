@@ -3,14 +3,14 @@
     <fieldset class="col-sm-12">
       <legend>Latest posts</legend>
       {{#each posts}}
-      <blockquote class="lead">
-        <small>{{message}}</small>
-      </blockquote>
-      <hr>
+        <blockquote class="lead">
+          <small>{{message}}</small>
+        </blockquote>
+        <hr>
       {{else}}
-      <p class="lead text-center">
-      No posts
-      </p>
+        <p class="lead text-center">
+          No posts
+        </p>
       {{/each}}
     </fieldset>
   </div>

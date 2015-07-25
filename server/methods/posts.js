@@ -5,7 +5,6 @@ Meteor.methods({
       createdAt: new Date(),
       createdBy: user._id
     });
-    console.log(post);
 
     var postId = Posts.insert(post);
 

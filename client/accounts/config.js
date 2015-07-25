@@ -11,9 +11,9 @@ AccountsTemplates.configure({
  });
 
 
-AccountsTemplates.configureRoute('signIn');
-AccountsTemplates.configureRoute('signUp');
-AccountsTemplates.configureRoute('changePwd');
-AccountsTemplates.configureRoute('forgotPwd');
-AccountsTemplates.configureRoute('resetPwd');
-AccountsTemplates.configureRoute('ensureSignedIn');
+// AccountsTemplates.configureRoute('signIn');
+// AccountsTemplates.configureRoute('signUp');
+// AccountsTemplates.configureRoute('changePwd');
+// // AccountsTemplates.configureRoute('forgotPwd');
+// AccountsTemplates.configureRoute('resetPwd');
+// AccountsTemplates.configureRoute('ensureSignedIn');

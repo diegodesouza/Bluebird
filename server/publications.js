@@ -1,3 +1,4 @@
 Meteor.publish('posts', function(userId) {
-  return Posts.find({_id: this.userId});
+  var currentUserId = this.userId;
+  return Posts.find({createdBy: currentUserId});
 });
