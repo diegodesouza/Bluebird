@@ -2,16 +2,19 @@
   <div class="row">
     <fieldset class="col-sm-12">
       <legend>Latest posts</legend>
-      {{#each posts}}
-        <blockquote class="lead">
-          <small>{{message}}</small>
-        </blockquote>
-        <hr>
-      {{else}}
-        <p class="lead text-center">
-          No posts
-        </p>
-      {{/each}}
+      {{#if currentUser}}
+        {{#each posts}}
+          <blockquote class="lead">
+            <small>{{message}}</small>
+            <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+          </blockquote>
+          <hr>
+        {{else}}
+          <p class="lead text-center">
+            No posts
+          </p>
+        {{/each}}
+      {{/if}}
     </fieldset>
   </div>
 </template>
