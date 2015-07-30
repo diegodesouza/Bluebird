@@ -1,11 +1,12 @@
 <template name="header">
   <nav>
     <a class="navbar-brand">BlueBird</a>
-    {{#if currentUser}}
     <ul id="slide-out" class="side-nav">
-      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+      <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> -->
       {{> atForm}}
-    <a class="waves-effect waves-teal btn-flat" data-action="logout">Sign Out</a>
+    {{#if currentUser}}
+      <a class="waves-effect waves-teal btn-flat" data-action="logout">Sign Out</a>
+    {{/if}}
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse right"><i class="mdi-navigation-menu"></i></a>
   </nav>

@@ -13,3 +13,4 @@ aldeed:simple-schema
 aldeed:collection2
 useraccounts:materialize
 accounts-facebook
+accounts-password
